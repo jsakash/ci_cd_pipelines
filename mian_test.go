@@ -13,3 +13,19 @@ func TestCalculate(t *testing.T) {
 		t.Error("/n/n Expected 4 ")
 	}
 }
+
+func TestTableCalculate(t *testing.T) {
+	var tests = []struct {
+		input    int
+		expected int
+	}{
+		{2, 4},
+		{-1, 1},
+		{0, 2},
+	}
+	for _, tests := range tests {
+		if output := Calculate(tests.input); output != tests.expected {
+			t.Error("Test Failed: {} inputed, {} expected, {} received: {}", tests.input, tests.expected, output)
+		}
+	}
+}
