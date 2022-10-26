@@ -2,10 +2,13 @@ package main
 
 import "testing"
 
-func TestMain(t *testing.T) {
-	initial := Greet()
-	if initial != "Welcome to testing and integration" {
-		t.Errorf("\nWanted - 'Welcome to testing and integration'\n got - %s\n\n", initial)
+func TestGreet(t *testing.T) {
+	//initial := Greet()
+	if Greet() != "Welcome to testing and integration" {
+		t.Errorf("\nWanted - 'Welcome to testing and integration'\n got -")
 	}
+}
+
+func TestCalculate(t *testing.T) {
 
 }
