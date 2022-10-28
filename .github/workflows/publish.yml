@@ -18,7 +18,8 @@ jobs:
         with:
           name: jsakash/go-github-actions
 
-          ## Here we pass in our Docker Username
+          ## Here we pass in our Docker Username and Password
           username: ${{ secrets.DOCKER_USERNAME }}
-          ## and our Docker password which 
           password: ${{ secrets.DOCKER_PASSWORD }}
+          # Secret should be added to the git repository
+          # Navigate to the repo settings --> secret --> actions --> add new repo secret
