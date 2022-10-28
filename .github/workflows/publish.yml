@@ -16,7 +16,7 @@ jobs:
       - name: Publish to Registry
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
-          name: jsakash/go-github-actions
+          name: akashjs/go-github-actions
 
           ## Here we pass in our Docker Username and Password
           username: ${{ secrets.DOCKER_USERNAME }}
