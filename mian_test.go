@@ -29,3 +29,11 @@ func TestTableCalculate(t *testing.T) {
 		}
 	}
 }
+
+func TestMultiply(t *testing.T) {
+	result := Multiply(2)
+
+	if result%10 != 0 {
+		t.Error("Expected multiple of ten ")
+	}
+}
